@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Um diário sobre sentir, perder, insistir e continuar.">
+  <meta name="theme-color" content="#171412">
+  <title>Entre o que fui e o que ainda sou</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio">G.</a>
+    <nav aria-label="Navegação principal">
+      <a href="#textos">Textos</a>
+      <a href="#sobre">Sobre</a>
+      <button id="theme-toggle" class="icon-button" type="button" aria-label="Alternar tema">◐</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <p class="eyebrow">DIÁRIO ABERTO · RAFAEL</p>
+      <h1>Entre o que fui<br>e o que ainda sou.</h1>
+      <blockquote>“Não escrevo para explicar as pessoas que passaram. Escrevo para entender quem eu fui enquanto elas estavam aqui.”</blockquote>
+      <a class="scroll-link" href="#textos">Começar a ler <span>↓</span></a>
+    </section>
+
+    <section id="textos" class="content-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PÁGINAS DE MIM</p>
+          <h2>Entradas recentes</h2>
+        </div>
+        <label class="search">
+          <span aria-hidden="true">⌕</span>
+          <input id="search-input" type="search" placeholder="Buscar um sentimento..." aria-label="Buscar textos">
+        </label>
+      </div>
+      <div id="filters" class="filters" aria-label="Filtros"></div>
+      <div id="entries" class="entries" aria-live="polite">
+        <p class="loading">Abrindo as páginas...</p>
+      </div>
+    </section>
+
+    <section id="sobre" class="about">
+      <p class="eyebrow">SOBRE ESTE LUGAR</p>
+      <div class="about-grid">
+        <h2>Apenas eu<br>sendo eu.</h2>
+        <div>
+          <p>Este não é um arquivo sobre quem passou pela minha vida. É um registro do que ficou em mim: o amor, a ausência, a ansiedade, a coragem, as despedidas e a vontade teimosa de continuar.</p>
+          <p>Os nomes foram retirados porque a história que posso contar é a minha. Aqui, ninguém é personagem. Existem apenas sentimentos — e as versões de mim que nasceram deles.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Uma vida em construção.</p>
+    <p id="last-update">Atualizado conforme eu mudo.</p>
+  </footer>
+
+  <dialog id="entry-dialog">
+    <button class="dialog-close" type="button" aria-label="Fechar">×</button>
+    <article id="dialog-content"></article>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
